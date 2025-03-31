@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header page</title>
-    <link rel="stylesheet" href="0-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="0-styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="sidebar">
-                <li><a href=""><img src="images/logo_headphones.png" alt=""></a></li>
-                <li><a href="">what we do</a></li>
-                <li><a href="">our results</a></li>
-                <li><a href="">contact us</a></li>
-            </ul>
-            <ul>
-                <li><a href=""><img src="images/logo_headphones.png" alt=""></a></li>
-                <li><a href="">what we do</a></li>
-                <li><a href="">our results</a></li>
-                <li><a href="">contact us</a></li>
-            </ul>
+      <nav>
+        <img src="images/logo_headphones.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="">what we do</a>
+          <a href="#">our results</a>
+          <a href="#">contact us</a>
         </nav>
-        <div class="hero">
-            <h3>Lorem ipsum dolor set amet lorem ipsum</h3>
-            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-            <button>CALL TO ACTION</button>
-            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in 
-               <span>voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
-            </p>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
+      </nav>
+
+      <div class="hero">
+        <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
+        <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <button>CALL TO ACTION</button>
+        <p class="paragra">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in <br />
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
     </header>
-</body>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

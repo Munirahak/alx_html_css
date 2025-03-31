@@ -8,24 +8,35 @@
     <link rel="stylesheet" href="1-styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
-        <img src="images/logo_headphones.png" alt="" />
-        <a href="">what we do</a>
-        <a href="">our results</a>
-        <a href="">contact us</a>
+        <img src="images/logo_headphones.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="">what we do</a>
+          <a href="#">our results</a>
+          <a href="#">contact us</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
       </nav>
+
       <div class="hero">
-        <p>Lorem ipsum dolor set amet lorem ipsum</p>
+        <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
         <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
         <button>CALL TO ACTION</button>
-        <p class="lorem">
+        <p class="paragra">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in <br />
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
     </header>
@@ -34,7 +45,7 @@
     <section class="we-do">
       <div class="what-we-do">
         <h2>What we do...</h2>
-        <p>
+        <p class="paragra">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut <br />
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -47,22 +58,34 @@
           <div class="card">
             <span class="holberton_school-icon-ic_sound"></span>
             <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
           </div>
           <div class="card">
-            <img src="images/favicon.png" alt="Video icon" />
+            <span class="holberton_school-icon-ic_video"></span>
             <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
           </div>
           <div class="card">
-            <img src="images/favicon.png" alt="Music icon" />
+            <span class="holberton_school-icon-ic_music"></span>
             <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
           </div>
           <div class="card">
-            <img src="images/favicon.png" alt="Ear icon" />
+            <span class="holberton_school-icon-ic_hearing"></span>
             <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
           </div>
         </div>
       </div>

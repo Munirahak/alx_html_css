@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our results</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="2-styles.css" />
     <link rel="stylesheet" href="1-styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
-        <img src="images/logo_headphones.png" alt="" />
-        <a href="" style="margin-left: auto">what we do</a>
-        <a href="">our results</a>
-        <a href="">contact us</a>
+        <img src="images/logo_headphones.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="">what we do</a>
+          <a href="#">our results</a>
+          <a href="#">contact us</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
       </nav>
+
       <div class="hero">
         <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
         <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
         <button>CALL TO ACTION</button>
-        <p>
+        <p class="paragra">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut <br />
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -123,37 +134,5 @@
         </div>
       </div>
     </section>
-
-    <!-- contact us -->
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <form action="">
-        <div>
-          <input type="text" name="name" id="name" placeholder="Name" />
-        </div>
-        <div>
-          <input type="email" name="email" id="email" placeholder="Email" />
-        </div>
-        <div>
-          <input
-            type="text"
-            name="message"
-            id="message"
-            placeholder="Your Message"
-          />
-        </div>
-        <button type="submit" class="submit">Submit</button>
-      </form>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <img src="images/logo_headphones.png" alt="Logo" />
-      <div class="socials">
-        <span class="holberton_school-icon-ic_facebook"></span>
-        <span class="holberton_school-icon-ic_twitter"></span>
-        <span class="holberton_school-icon-ic_instagram"></span>
-      </div>
-    </footer>
   </body>
 </html>

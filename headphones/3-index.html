@@ -1,109 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
-    <link rel="stylesheet" href="3-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="3-styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <nav>
-            <img src="images/favicon.png" alt="">
-            <img src="images/logo_headphones.png" alt="">
-            <a href="">what we do</a>
-            <a href="">our results</a>
-            <a href="">contact us</a>
+      <nav>
+        <img src="images/logo_headphones.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="">what we do</a>
+          <a href="#">our results</a>
+          <a href="#">contact us</a>
         </nav>
-        <div class="hero">
-            <p>Lorem ipsum dolor set amet lorem ipsum</p>
-            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-            <button>CALL TO ACTION</button>
-            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
+      </nav>
+
+      <div class="hero">
+        <h2>Lorem ipsum dolor set amet lorem ipsum</h2>
+        <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <button>CALL TO ACTION</button>
+        <p class="paragra">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in <br />
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
     </header>
 
     <!-- what we do section -->
-    <section>
-        <div class="what-we-do">
-            <h2>What we do...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    <section class="we-do">
+      <div class="what-we-do">
+        <h2>What we do...</h2>
+        <p class="paragra">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in <br />
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <span class="holberton_school-icon-ic_sound"></span>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
             </p>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/favicon.png" alt="Sound icon">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="card">
-                    <img src="images/favicon.png" alt="Video icon">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="card">
-                    <img src="images/favicon.png" alt="Music icon">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="card">
-                    <img src="images/favicon.png" alt="Ear icon">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-         </div>
+          </div>
+          <div class="card">
+            <span class="holberton_school-icon-ic_video"></span>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="card">
+            <span class="holberton_school-icon-ic_music"></span>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="card">
+            <span class="holberton_school-icon-ic_hearing"></span>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- our results section -->
-    <section>
-        <div class="our-result">
-            <h2>Our results speak for themselves</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    <section class="results">
+      <div class="our-result">
+        <h2>Our results speak for themselves</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in <br />
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="penta">
+          <div class="pens">
+            <p>
+              <span>+2%</span> <br />
+              Lorem ipsum dolor
             </p>
-            <div class="penta">
-                <div class="pens">
-                    <img src="images/pentagone.png" alt="pentagone">
-                    <h2>+2%</h2>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-                <div class="pens">
-                    <img src="images/pentagone.png" alt="pentagone">
-                    <h2>+2%</h2>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-                <div class="pens">
-                    <img src="images/pentagone.png" alt="pentagone">
-                    <h2>+2%</h2>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-                <div class="pens">
-                    <img src="images/pentagone.png" alt="pentagone">
-                    <h2>+2%</h2>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-            </div>
+          </div>
+          <div class="pens">
+            <p>
+              <span>+2%</span> <br />
+              Lorem ipsum dolor
+            </p>
+          </div>
+          <div class="pens">
+            <p>
+              <span>+2%</span> <br />
+              Lorem ipsum dolor
+            </p>
+          </div>
+          <div class="pens">
+            <p>
+              <span>+2%</span> <br />
+              Lorem ipsum dolor
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact us section -->
-    <section>
-        <div class="form">
-            <h2>Contact Us</h2>
-            <form action="">
-
-            </form>
+    <!-- contact us -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form action="">
+        <div>
+          <input type="text" name="name" id="name" placeholder="Name" />
         </div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Your Message"
+          />
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
     </section>
-</body>
+  </body>
 </html>
